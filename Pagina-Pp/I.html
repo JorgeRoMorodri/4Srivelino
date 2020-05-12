@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="I.html">Casa</a>
+			<a href="II.html">Acerca de</a>
+			<a href="III.html">ABCerveza</a>
+            <a href="IV.html">Visítanos</a>
+			<a href="#"><img class="logito" src="anadir-al-carrito.png"></a>
+            <section class="textos-header"><h1>Cervecería</h1></section>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            <h2 class="titulo">CerveZas</h2>
+            <div class="contenedor-aboutus">
+                <img src="one.jpg" alt="" class="img-one">
+                <div class="texto">
+                    <h3><span>1</span>#HECHO_ARTESANAL</h3>
+                    <p> Una cerveza artesanal se define como una que es independiente y tradicional .
+                        <h4>Independiente:</h4> 
+                        No pertenece a ningún grupo mayoritario.
+                        <h4>Tradicional:</h4>
+                        Es una cerveza 100% de malta y sólo utiliza 4 ingredientes en su elaboración: malta, lúpulo, levadura y agua.
+                        </p>
+                    <h3><span>2</span>#CERVEZA_ARTESANAL</h3>
+                    <p>
+                        En el 2018 en Tlaxco, Tlaxcala un empresario estaba convencido de que en el estado el mercado de cervezas necesitaba revolucionarse e inovarse. Su meta era brindarle a los consumidores la oportunidad de descubrir un mundo de alternativas dentro del universo artesanal.
+                        Así fue como Rodrigo comenzó su proyecto de la cerveza artesanal hecho en Tlax y para Tlaxcala</p>
+                </div>
+            </div>
+        </section>
+        <section class="reg-b">
+
+        <form method="post" class="reg">
+            <h1 class="re">RE-GIS-TRO</h1>
+            <input type="text" name="name" placeholder="Nombre completo">
+            <input type="email" name="email" placeholder="Email">
+            <input type="submit" name="register">
+        </form>
+        <?php 
+            include("bd.php");
+            ?>
+    </section>
+        <section class="about-services">
+            <div class="contenedor">
+                
+                <div class="servicio-cont">
+                    
+                    <div class="servicio-ind">
+                        <img src="eleven.jpg" alt="">
+                        <h3>Comienzo</h3>
+                        <p>Cervecería Morales es una empresa orgullosamente mexicana tlaxcalteca como una empresa nueva en la pro
+                            ducción de bebidas artesanales que se fundan en el corazón de Tlaxco, con la intención de distinguirse por sus ideas frescas y, por 
+                            producir cervezas exquisitas a un precio justo. Nuestra línea de cervezas mestizas se caracteriza tanto por el riguroso 
+                            proceso artesanal con el que son fabricadas, como por la calidad suprema de sus ingredientes.</p>
+                    </div>
+                    <h2 class="us">(Us)</h2>
+                    <div class="servicio-ind">
+                        <img src="two.jpg" alt="">
+                        <h3>Hoy</h3>
+                        <p>Hoy, somos una de las cervecerías artesanales mas competitivas del mercado. Orgullosamente, buscamos inovar en este amplio mercado,
+                            intentando complacer a cualquier tipo de cliente sin afectar su economía. Tenemos presencia y envios a toda la república. 
+                            Cada día nos sentimos motivados de pensar que uno de nuestros objetivos es poner a Tlaxcala en alto como una referencia del movimiento artesanal y cultural del estado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="conten-foo">
+                <h4>Celular</h4>
+                <p>2461448622</p>
+            </div>
+            <div class="conten-foo">
+                <h4>Email</h4>
+                <p>contactocer@gmail.com</p>
+            </div>
+            <div class="conten-foo">
+                <h4>Locacion</h4>
+                <p>Iturbide, 90250 Tlaxco, Tlax.</p>
+            </div>
+        </div>
+        <h2 class="final">&copy; Cervecería Morales / Rodrigo Morales</h2>
+    </footer>
+</body>
+
+</html>

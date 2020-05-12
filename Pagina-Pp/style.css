@@ -1,0 +1,319 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-family: 'oswald';
+}
+
+.logito{
+	width: 2%;
+	height: 2%;
+
+}
+
+.contenedor{
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo{
+	color:#642a73 ;
+	font-size: 90px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.us{
+	color: #980BBF;
+	font-size: 90px;
+	text-align: center;
+	margin-bottom: 60px;
+
+}
+
+/*header*/
+ 
+header{
+	width: 100%;
+	height: 600px;
+	background-image: url(../Pagina-Pp/onee.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+header::before{
+	content: "";
+	width: 100%;
+	min-height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: gray;
+	color: gray;
+}
+
+
+nav{
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+nav>a{
+	color:gray;
+	font-weight: 300;
+	text-decoration: #D8D409;
+	margin-right: 10px;
+	position: relative;
+
+}
+
+nav>a:hover{
+	text-decoration:none;
+}
+
+header .textos-header{
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.textos-header h1{
+	font-size: 100px;
+	color: #F2EE19;
+	position: relative;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/*About us*/
+
+.contenedor-aboutus{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.img-one{
+	width: 38%;
+}
+
+.contenedor-aboutus .texto{
+	width: 48%;
+}
+
+.texto h3 {
+	margin-bottom: 15px;
+}
+.texto h3 span{
+	background: #C237E5;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+
+.texto p{
+	padding: 0px 0px 30px 15px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+/*registro*/
+.reg-b{
+	background-color: #C4C3C3;
+}
+.reg {
+	padding: 50px 20px;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+
+.re {
+	text-align: center;
+	padding: 12px;
+	color: #8D3EA3;
+	font-size: 70px;
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+
+input[type='submit']{
+	background-color: #48e;
+	color: #fff;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none}
+
+
+
+	.fine{
+		text-align: center;
+		width: 100%;
+		padding: 12px;
+		background-color: #1e6;
+		color: #fff
+	}
+	.w {
+		text-align: center;
+		width: 100%;
+		padding: 12px;
+		background-color: #a22;
+		color: #fff}
+/*servicios*/
+
+.about-services{
+	background: #8D8B8B;
+	padding-bottom: 0px;
+}
+
+.servicio-cont{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.servicio-ind{
+	width: 28%;
+	text-align: center;
+	font-size: 17px;
+}
+
+.servicio-ind img{
+	width: 90%;
+}
+
+.servicio-ind h3{
+	margin: 10px 0;
+}
+
+.servicio-ind p{
+	font-weight: 300;
+	text-align: justify;
+}
+
+/*futher*/
+
+footer{
+	background: #414141;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.conten-foo{
+	text-align: center;
+}
+
+.conten-foo h4{
+	color: #fff;
+	border-bottom: 3px solid #CC44EE;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+
+}
+
+.conten-foo p{
+	color: #ccc;
+}
+
+.final{
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0;
+	color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+	header{
+		background-position: center;
+	}
+
+	.contenedor-aboutus{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor-aboutus .texto{
+		width:90%;
+
+	}
+
+	.img-one{
+		width: 90%;
+	}
+
+	/*icon*/
+
+	.image-port{
+		width: 44%;
+	}
+
+	/*servicies*/
+	.servicio-cont{
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.servicio-ind{
+		width: 100%;
+		text-align: center;
+	}
+
+	.servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+
+		margin-bottom: 60px;
+	}
+
+	.servicio-ind img{
+		width: 90%;
+	}
+
+	/*registro*/
+	input{
+		text-align: center;
+	}
+
+
+	/*!!*/
+
+.dou{
+	background-image: url(../Pagina-Pp/2.2.jfif);
+}
+}
